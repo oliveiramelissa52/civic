@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="assets/script.js"></script>
+</head>
+
+<body class="bg-surface font-body text-on-surface antialiased">
+  <!-- Navigation -->
+  <header
+    class="sticky top-0 w-full z-50 bg-black/85 backdrop-blur-lg shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
+    <nav class="flex justify-between items-center px-8 md:px-16 h-24 w-full">
+      <div class="text-2xl font-black tracking-tighter" style="background: linear-gradient(90deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">HIMPORTS</div>
+      <div class="hidden md:flex gap-12">
+        <a class="font-['Inter'] font-bold tracking-tight text-sm uppercase text-yellow-400 border-b-2 border-yellow-400 pb-1 hover:text-yellow-300 transition-colors duration-300"
+          href="#">Home</a>
+        <a class="font-['Inter'] font-bold tracking-tight text-sm uppercase text-yellow-400 hover:text-yellow-300 transition-colors duration-300"
+          href="#">Sobre Nós</a>
+        <a class="font-['Inter'] font-bold tracking-tight text-sm uppercase text-yellow-400 hover:text-yellow-300 transition-colors duration-300"
+          href="#">Cars</a>
+        <a class="font-['Inter'] font-bold tracking-tight text-sm uppercase text-yellow-400 hover:text-yellow-300 transition-colors duration-300"
+          href="#">Feedbacks</a>
+      </div>
+      <button
+        class="border border-yellow-500 text-yellow-400 px-8 py-3 rounded-full font-label text-sm font-bold uppercase tracking-widest scale-95 active:scale-90 hover:bg-yellow-500 hover:text-black transition-all duration-300">
+        Testar Agora
+      </button>
+    </nav>
+  </header>
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+      <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0 opacity-85">
+        <source src="assets/background.mp4" type="video/mp4" />
+      </video>
+      <div class="absolute inset-0 bg-black/50 z-10"></div>
+      <div class="container mx-auto px-16 md:px-32 py-24 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-20">
+        <div class="lg:col-span-7 z-10">
+          <h1 class="font-headline font-extrabold text-4xl md:text-6xl lg:text-7xl leading-[0.9] tracking-tighter mb-8" style="background: linear-gradient(90deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+            PERFORMANCE & EXCLUSIVIDADE.
+          </h1>
+          <p class="font-body text-lg md:text-xl max-w-lg mb-12 leading-[1.6]" style="color: #ffd700; opacity: 0.85;">
+            Descubra a linha de esportivos pensada para quem não aceita menos que adrenalina.
+          </p>
+          <div class="flex gap-6">
+            <button class="border border-yellow-500 px-10 py-4 rounded-full font-label text-sm font-bold uppercase tracking-widest hover:bg-yellow-500 hover:text-black transition-colors duration-300" style="color: #ffd700;">
+              Agendar Test Drive
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Identidade da Marca -->
+    <section class="py-32 bg-black">
+      <div class="container mx-auto px-8 md:px-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <span class="font-label text-xs font-bold uppercase tracking-[0.2em] text-yellow-600 mb-4 block">Nossa História</span>
+            <h2 class="font-headline font-bold text-5xl tracking-tight mb-8" style="background: linear-gradient(90deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">DÉCADAS DE PURA ENGENHARIA</h2>
+            <p class="font-body text-white/70 text-lg leading-[1.8] mb-12">
+              Desde a nossa fundação, cada veículo é criado com uma única obsessão: fazer o motorista sentir que o carro é uma extensão de si mesmo. Nossa filosofia une precisão técnica, design atemporal e uma paixão inabalável pela velocidade.
+            </p>
+            <blockquote class="border-l-4 border-yellow-500 pl-6 italic text-white/70 text-xl leading-relaxed">
+              "A velocidade não é um número. É uma sensação que você nunca esquece."
+            </blockquote>
+          </div>
+          <div class="grid grid-cols-3 gap-8 text-center">
+            <div class="flex flex-col gap-2">
+              <span class="font-headline font-extrabold text-5xl" style="background: linear-gradient(90deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">50+</span>
+              <span class="font-label text-xs font-bold uppercase tracking-widest text-yellow-600">Anos de História</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="font-headline font-extrabold text-5xl" style="background: linear-gradient(90deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">120+</span>
+              <span class="font-label text-xs font-bold uppercase tracking-widest text-yellow-600">Títulos Conquistados</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="font-headline font-extrabold text-5xl" style="background: linear-gradient(90deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">40+</span>
+              <span class="font-label text-xs font-bold uppercase tracking-widest text-yellow-600">Recordes Mundiais</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Modelos em Destaque -->
+    <section class="py-32 bg-black">
+      <div class="container mx-auto px-8 md:px-16">
+        <div class="mb-24">
+          <span class="font-label text-xs font-bold uppercase tracking-[0.2em] text-outline mb-4 block"></span>
+          <h2 class="font-headline font-bold text-5xl tracking-tight" style="background: linear-gradient(90deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">OBJETOS DE DESEJO</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+          <!-- Car Card 1 -->
+          <div class="group">
+            <div class="relative overflow-hidden mb-8 rounded-xl bg-black border border-yellow-600/30">
+              <img alt="Honda Civic Type R"
+                class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+                src="assets/carros/IMG_8798.JPG" />
+            </div>
+            <h3 class="font-headline font-bold text-2xl mb-4 text-white">Civic Type R amarelo</h3>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="bg-black border border-yellow-600/30 px-3 py-1 rounded-sm text-[10px] font-label font-bold uppercase tracking-widest text-white">518 HP</span>
+              <span class="bg-black border border-yellow-600/30 px-3 py-1 rounded-sm text-[10px] font-label font-bold uppercase tracking-widest text-white">0–100 em 3.2s</span>
+              <span class="bg-black border border-yellow-600/30 px-3 py-1 rounded-sm text-[10px] font-label font-bold uppercase tracking-widest text-white">Máx 296 km/h</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-headline font-bold text-lg text-white">A partir de R$ 1.200.000</span>
+              <button class="border border-yellow-500 px-5 py-2 rounded-full font-label text-xs font-bold uppercase tracking-widest text-white hover:bg-yellow-500 hover:text-black transition-all duration-300">Conhecer o Modelo</button>
+            </div>
+          </div>
+          <!-- Car Card 2 -->
+          <div class="group">
+            <div class="relative overflow-hidden mb-8 rounded-xl bg-black border border-yellow-600/30">
+              <img alt="Honda Civic Type R"
+                class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+                src="assets/carros/IMG_8799.JPG" />
+            </div>
+            <h3 class="font-headline font-bold text-2xl mb-4 text-white">Civic Type R Branco</h3>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="bg-black border border-yellow-600/30 px-3 py-1 rounded-sm text-[10px] font-label font-bold uppercase tracking-widest text-white">503 HP</span>
+              <span class="bg-black border border-yellow-600/30 px-3 py-1 rounded-sm text-[10px] font-label font-bold uppercase tracking-widest text-white">0–100 em 3.4s</span>
+              <span class="bg-black border border-yellow-600/30 px-3 py-1 rounded-sm text-[10px] font-label font-bold uppercase tracking-widest text-white">Máx 290 km/h</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-headline font-bold text-lg text-white">A partir de R$ 780.000</span>
+              <button class="border border-yellow-500 px-5 py-2 rounded-full font-label text-xs font-bold uppercase tracking-widest text-white hover:bg-yellow-500 hover:text-black transition-all duration-300">Conhecer o Modelo</button>
+            </div>
+          </div>
+          <!-- Car Card 3 -->
+          <div class="group">
+            <div class="relative overflow-hidden mb-8 rounded-xl bg-black border border-yellow-600/30">
+              <img alt="Honda Civic Type R"
+                class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+                src="assets/carros/IMG_8800.JPG" />
+            </div>
+            <h3 class="font-headline font-bold text-2xl mb-4 text-white">Civic Type R Cinza</h3>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="bg-black border border-yellow-600/30 px-3 py-1 rounded-sm text-[10px] font-label font-bold uppercase tracking-widest text-white">602 HP</span>
+              <span class="bg-black border border-yellow-600/30 px-3 py-1 rounded-sm text-[10px] font-label font-bold uppercase tracking-widest text-white">0–100 em 3.1s</span>
+              <span class="bg-black border border-yellow-600/30 px-3 py-1 rounded-sm text-[10px] font-label font-bold uppercase tracking-widest text-white">Máx 331 km/h</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-headline font-bold text-lg text-white">A partir de R$ 1.450.000</span>
+              <button class="border border-yellow-500 px-5 py-2 rounded-full font-label text-xs font-bold uppercase tracking-widest text-white hover:bg-yellow-500 hover:text-black transition-all duration-300">Conhecer o Modelo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Experiência de Dirigir -->
+    <section class="py-32 bg-black">
+      <div class="container mx-auto px-8 md:px-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <span class="font-label text-xs font-bold uppercase tracking-[0.2em] text-yellow-600 mb-4 block">A Experiência</span>
+            <h2 class="font-headline font-bold text-5xl tracking-tight mb-8" style="background: linear-gradient(90deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">SINTA CADA CENTÍMETRO DA PISTA</h2>
+            <p class="text-white/80 text-lg leading-[1.8] mb-10">
+              O ronco grave do motor ao ligar. O volante que responde a cada intenção. A curva que se fecha à sua volta enquanto o acelerador pressiona você no banco. Isso não é transporte — é pura comunhão entre homem e máquina.
+            </p>
+            <blockquote class="border-l-4 border-yellow-500 pl-6 italic text-white/70 text-lg leading-relaxed">
+              "Depois de pilotar um carro assim, nada mais parece suficiente." — Carlos M., proprietário desde 2021
+            </blockquote>
+          </div>
+          <div class="rounded-xl overflow-hidden aspect-video bg-black/20 flex items-center justify-center">
+            <span class="material-symbols-outlined text-8xl text-yellow-500/30">speed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Diferenciais da Marca -->
+    <section class="py-32 bg-black">
+      <div class="container mx-auto px-8 md:px-16">
+        <div class="mb-24 text-center">
+          <span class="font-label text-xs font-bold uppercase tracking-[0.2em] text-yellow-600 mb-4 block">Por que KINETIC</span>
+          <h2 class="font-headline font-bold text-5xl tracking-tight" style="background: linear-gradient(90deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">DIFERENCIAIS QUE DEFINEM A ESCOLHA</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-black border border-yellow-600/30 p-12 rounded-xl flex flex-col gap-6 shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
+            <span class="material-symbols-outlined text-4xl text-yellow-500">engineering</span>
+            <div>
+              <h3 class="font-headline font-bold text-xl mb-3 text-yellow-500">Engenharia de Alto Desempenho</h3>
+              <p class="text-white/70 leading-relaxed text-sm">Cada peça é projetada para maximizar a performance sem abrir mão da confiabilidade em qualquer condição.</p>
+            </div>
+          </div>
+          <div class="bg-black border border-yellow-600/30 p-12 rounded-xl flex flex-col gap-6 shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
+            <span class="material-symbols-outlined text-4xl text-yellow-500">palette</span>
+            <div>
+              <h3 class="font-headline font-bold text-xl mb-3 text-yellow-500">Personalização Exclusiva</h3>
+              <p class="text-white/70 leading-relaxed text-sm">Configure cores, acabamentos e pacotes técnicos. Seu veículo é único como você.</p>
+            </div>
+          </div>
+          <div class="bg-black border border-yellow-600/30 p-12 rounded-xl flex flex-col gap-6 shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
+            <span class="material-symbols-outlined text-4xl text-yellow-500">build</span>
+            <div>
+              <h3 class="font-headline font-bold text-xl mb-3 text-yellow-500">Assistência Técnica Especializada</h3>
+              <p class="text-white/70 leading-relaxed text-sm">Equipe certificada disponível 24/7 para manutenção preventiva e suporte emergencial em todo o país.</p>
+            </div>
+          </div>
+          <div class="bg-black border border-yellow-600/30 p-12 rounded-xl flex flex-col gap-6 shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
+            <span class="material-symbols-outlined text-4xl text-yellow-500">verified_user</span>
+            <div>
+              <h3 class="font-headline font-bold text-xl mb-3 text-yellow-500">Garantia Estendida</h3>
+              <p class="text-white/70 leading-relaxed text-sm">Cobertura completa por até 5 anos, incluindo peças de desgaste em condições de uso esportivo.</p>
+            </div>
+          </div>
+          <div class="bg-black border border-yellow-600/30 p-12 rounded-xl flex flex-col gap-6 shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
+            <span class="material-symbols-outlined text-4xl text-yellow-500">groups</span>
+            <div>
+              <h3 class="font-headline font-bold text-xl mb-3 text-yellow-500">Comunidade de Proprietários</h3>
+              <p class="text-white/70 leading-relaxed text-sm">Acesso a eventos exclusivos, track days e encontros com outros entusiastas da marca ao redor do mundo.</p>
+            </div>
+          </div>
+          <div class="bg-black border border-yellow-600/30 p-12 rounded-xl flex flex-col gap-6 shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
+            <span class="material-symbols-outlined text-4xl text-yellow-500">diamond</span>
+            <div>
+              <h3 class="font-headline font-bold text-xl mb-3 text-yellow-500">Coleção Exclusiva</h3>
+              <p class="text-white/70 leading-relaxed text-sm">Edições limitadas e versões de produção especial disponíveis apenas para membros da nossa lista preferencial.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Depoimentos / Prova Social -->
+    <section class="py-32 bg-black">
+      <div class="container mx-auto px-8 md:px-16">
+        <div class="mb-24 text-center">
+          <span class="font-label text-xs font-bold uppercase tracking-[0.2em] text-yellow-600 mb-4 block">Nossos Clientes</span>
+          <h2 class="font-headline font-bold text-5xl tracking-tight" style="background: linear-gradient(90deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">QUEM JÁ VIVE A EXPERIÊNCIA</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-black border border-yellow-600/30 p-10 rounded-xl flex flex-col gap-6">
+            <div class="flex gap-1">
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+            </div>
+            <p class="text-white/70 leading-relaxed italic">"Adquirir o Civic Touring foi a melhor decisão que já tomei. Cada vez que ligo o motor, é como se fosse a primeira vez. A Himports tornou tudo simples e inesquecível."</p>
+            <div>
+              <p class="font-label font-bold text-sm text-white">Rafael S.</p>
+              <p class="text-xs text-white/50">Proprietário do Civic Touring — São Paulo</p>
+            </div>
+          </div>
+          <div class="bg-black border border-yellow-600/30 p-10 rounded-xl flex flex-col gap-6">
+            <div class="flex gap-1">
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+            </div>
+            <p class="text-white/70 leading-relaxed italic">"Fiz o test drive e saí com o contrato assinado. O atendimento é diferente de tudo que já vi no mercado. Sinto que fazem parte da mesma paixão que eu."</p>
+            <div>
+              <p class="font-label font-bold text-sm text-white">Fernanda L.</p>
+              <p class="text-xs text-white/50">Proprietária do Civic Type R — Curitiba</p>
+            </div>
+          </div>
+          <div class="bg-black border border-yellow-600/30 p-10 rounded-xl flex flex-col gap-6">
+            <div class="flex gap-1">
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+              <span class="material-symbols-outlined text-sm text-yellow-500" style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">star</span>
+            </div>
+            <p class="text-white/70 leading-relaxed italic">"Os eventos para proprietários são extraordinários. Já participei de três track days e cada um superou o anterior. A comunidade Himports é, sozinha, um motivo de compra."</p>
+            <div>
+              <p class="font-label font-bold text-sm text-white">Marcelo T.</p>
+              <p class="text-xs text-white/50">Proprietário do Civic EXL — Rio de Janeiro</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CTA Final -->
+    <section class="py-32 bg-black">
+      <div class="container mx-auto px-8 md:px-16">
+        <div class="max-w-2xl mx-auto text-center mb-16">
+          <h2 class="font-headline font-bold text-4xl md:text-6xl mb-6" style="background: linear-gradient(90deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">VAGAS LIMITADAS PARA TEST DRIVE. RESERVE O SEU.</h2>
+          <p class="text-white/70 text-lg">Junte-se ao círculo de motoristas que não aceitam nada menos que o absoluto pico de performance.</p>
+        </div>
+        <form class="max-w-lg mx-auto flex flex-col gap-4">
+          <input type="text" placeholder="Nome completo"
+            class="w-full bg-black px-6 py-4 rounded-full font-body text-sm text-white outline-none border border-yellow-600/40 focus:border-yellow-500 placeholder-white/30 transition-colors" />
+          <input type="email" placeholder="E-mail"
+            class="w-full bg-black px-6 py-4 rounded-full font-body text-sm text-white outline-none border border-yellow-600/40 focus:border-yellow-500 placeholder-white/30 transition-colors" />
+          <input type="tel" placeholder="Telefone / WhatsApp"
+            class="w-full bg-black px-6 py-4 rounded-full font-body text-sm text-white outline-none border border-yellow-600/40 focus:border-yellow-500 placeholder-white/30 transition-colors" />
+          <select class="w-full bg-black px-6 py-4 rounded-full font-body text-sm text-white outline-none border border-yellow-600/40 focus:border-yellow-500 transition-colors">
+            <option value="" disabled selected class="text-white/30">Modelo de interesse</option>
+            <option value="911">911 GT3 RS</option>
+            <option value="m4">M4 Competition</option>
+            <option value="r8">R8 V10 Performance</option>
+          </select>
+          <button type="submit"
+            class="border border-yellow-500 text-white px-10 py-4 rounded-full font-label text-sm font-bold uppercase tracking-widest hover:bg-yellow-500 hover:text-black transition-all duration-300 mt-4">
+            Agendar Test Drive
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-black w-full pt-32 pb-12">
+    <div class="max-w-[1440px] mx-auto px-8 md:px-16 flex flex-col md:flex-row justify-between items-start gap-12">
+      <div class="flex flex-col gap-6">
+        <div class="text-xl font-black tracking-tighter" style="background: linear-gradient(90deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">HIMPORTS</div>
+        <p class="font-['Inter'] leading-[1.6] text-sm tracking-wide text-yellow-600/60 max-w-xs">
+          The Himports Gallery. Curating the world's finest automotive achievements for those who understand the value of
+          precision.
+        </p>
+        <div class="flex gap-4">
+          <a class="text-yellow-600/60 hover:text-yellow-400 transition-opacity duration-300"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="share">share</span>
+          </a>
+          <a class="text-yellow-600/60 hover:text-yellow-400 transition-opacity duration-300"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="language">language</span>
+          </a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+        <div class="flex flex-col gap-4">
+          <span class="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-600">Navigation</span>
+          <a class="font-['Inter'] leading-[1.6] text-sm tracking-wide text-yellow-600/60 hover:text-yellow-400 transition-all ease-in-out"
+            href="#">Fleet</a>
+          <a class="font-['Inter'] leading-[1.6] text-sm tracking-wide text-yellow-600/60 hover:text-yellow-400 transition-all ease-in-out"
+            href="#">Services</a>
+          <a class="font-['Inter'] leading-[1.6] text-sm tracking-wide text-yellow-600/60 hover:text-yellow-400 transition-all ease-in-out"
+            href="#">Experience</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-600">Legal</span>
+          <a class="font-['Inter'] leading-[1.6] text-sm tracking-wide text-yellow-600/60 hover:text-yellow-400 transition-all ease-in-out"
+            href="#">Privacy</a>
+          <a class="font-['Inter'] leading-[1.6] text-sm tracking-wide text-yellow-600/60 hover:text-yellow-400 transition-all ease-in-out"
+            href="#">Terms</a>
+        </div>
+        <div class="flex flex-col gap-6 col-span-2 md:col-span-1">
+          <span class="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-600">Connect</span>
+          <button
+            class="border border-yellow-500 px-6 py-3 rounded-full font-label text-xs font-bold uppercase tracking-widest text-yellow-400 hover:bg-yellow-500 hover:text-black transition-all duration-300">
+            RESERVAR
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-[1440px] mx-auto px-8 md:px-16 mt-24 pt-8 border-t border-yellow-600/20">
+      <p class="font-['Inter'] leading-[1.6] text-xs tracking-wide text-yellow-600/50">© 2024 HIMPORTS. PRECISION
+        ENGINEERED.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
